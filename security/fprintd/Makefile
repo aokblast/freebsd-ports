@@ -23,6 +23,9 @@ USE_GNOME=	glib20 intltool
 MESON_ARGS=	-Dlibsystemd=basu \
 		-Dsystemd=false
 
+post-install:
+	${LN} -s security/pam_fprintd.so ${STAGEDIR}${PREFIX}/lib/pam_fprintd.so
+
 INSTALL_TARGET=	install-strip
 
 .include <bsd.port.mk>

@@ -3,6 +3,7 @@ bin/fprintd-enroll
 bin/fprintd-list
 bin/fprintd-verify
 %%ETCDIR%%.conf
+lib/pam_fprintd.so
 lib/security/pam_fprintd.so
 libexec/fprintd
 share/dbus-1/interfaces/net.reactivated.Fprint.Device.xml
